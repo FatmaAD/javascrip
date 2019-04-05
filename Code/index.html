@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TETRIS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+</head>
+<body>
+    
+    <!--FIRST SCREEN-->
+
+    <div id="screen_1">
+        <div id="mainmenu">
+            <img id="logo" src="../Resources/kisspng-tetris-app-tetris-blitz-android-electronic-arts-red-hot-air-balloon-5adc4265172c01.7793900315243843570949.png" alt="Logo">
+            <button id="play" class="btn">Play</button>
+            <button id="team" class="btn">Team</button>
+        </div>
+        
+        <!--TEAM SCREEN-->
+    
+        <div id="team_screen">
+            <div class="member" id="aya">AYA MOUSTAFA</div>
+            <div class="member" id="fatma">FATMA ALAA</div>
+            <div class="member" id="hadeer">HADEER EL-RAYES</div>
+            <div class="member" id="nourhan">NOURHAN YAHIA</div>
+            <div class="member" id="ahmed">AHMED WAHEED</div>
+            <button id="menu" class="btn">Menu</button>
+        </div>  
+    </div>
+    <!--GAME SCREEN-->
+
+    <div id="game_screen">
+        <div id="canvas_container">
+            <canvas id="canvas" width="300px" height="600px"></canvas>
+            <div id="msg"></div>
+            <audio id="audio1">
+                <source src="../Resources/startGame.mp3" />
+            </audio>
+            
+        </div>
+        <div id="side_menu">
+            <img id="innerlogo" src="../Resources/kisspng-tetris-app-tetris-blitz-android-electronic-arts-red-hot-air-balloon-5adc4265172c01.7793900315243843570949.png" alt="logo">
+            <div id="score">
+                <div id="scoreterm">SCORE</div>
+                <div id="scorecounter"><span id='scoreNumb'>0</span></div>
+            </div>
+            <div id="level">
+                <div id="levelterm">LEVEL</div>
+                <div id="levelcounter"><span id='levelNumb'>1</span></div>
+            </div>
+            <button id="pause" class="btn">Pause | Resume</button>
+            <button id="exit" class="btn">Exit</button>
+        </div>
+    </div>
+    
+    <script src="tetris.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
